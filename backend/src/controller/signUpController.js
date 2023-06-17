@@ -1,5 +1,5 @@
 const signUpModel=require('../models/signUpModel')
-const valid= require('../validators/valid')
+const valid= require('../validations/valid')
 const jwt= require('jsonwebtoken')
 const registerUser= async function(req,res){
     try{
