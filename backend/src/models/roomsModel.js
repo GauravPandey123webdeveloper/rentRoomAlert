@@ -1,9 +1,12 @@
 const mongoose = require('mongoose');
-
 const roomSchema = new mongoose.Schema({
   title: {
     type: String,
     required: true,
+  },
+  category:{
+    type:String,
+    required:true
   },
   description: {
     type: String,
@@ -18,9 +21,9 @@ const roomSchema = new mongoose.Schema({
     required: true,
   },
   amenities: [String],
-  owner: {
+  ownerId: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'User',
+    ref: 'OwnerCollection',
     required: true,
   },
   availableFrom: {
@@ -53,8 +56,9 @@ const roomSchema = new mongoose.Schema({
       },
     },
   ],
-});
+},
+{timestamps:true});
 
-module.exports  = mongoose.model('Room', roomSchema);
+module.exports  = mongoose.model('RoomCollection', roomSchema);
 
 

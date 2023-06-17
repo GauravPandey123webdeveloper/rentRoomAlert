@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
-
 const userSchema = new mongoose.Schema({
-  username: {
+  userName: {
     type: String,
     required: true,
     unique: true,
@@ -15,35 +14,23 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  firstName: {
-    type: String,
-    required: true,
-  },
-  lastName: {
-    type: String,
-    required: true,
-  },
   phoneNumber: {
     type: String,
     required: true,
   },
-  aadharNumber: {
-    type: String,
-    required: true,
-  },
-  profilePicture: {
-    type: String,
-  },
-  isVerified: {
+  isDeleted: {
     type: Boolean,
-    default: false,
+    default: false
   },
-  createdAt: {
+  created: {
     type: Date,
     default: Date.now,
   },
-});
+  deletedAt: {
+    type: Date,
+    default: null
+  }
+}, { timestamps: true });
+module.exports = mongoose.model('UserCollection', userSchema);
 
-module.exports = mongoose.model('User', userSchema);
 
- 
