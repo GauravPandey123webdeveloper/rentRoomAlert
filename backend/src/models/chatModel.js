@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const chatSchema = new mongoose.Schema({
-  senderID: {
+  senderId: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'UserCollection',
     required: true,

@@ -7,8 +7,12 @@ const bookingSchema = new mongoose.Schema({
   },
   tenantId: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'tenantCollection',
+    ref: 'TenantCollection',
     required: true,
+  },
+  numberOfRoom:{
+    type:String,
+    required:true
   },
   startDate: {
     type: Date,
