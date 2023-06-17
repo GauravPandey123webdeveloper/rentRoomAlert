@@ -9,6 +9,10 @@ const tenantSchema = new mongoose.Schema({
     type:String,
     requied:true
   },
+  userId:{
+    type:mongoose.Schema.Types.ObjectId,
+    required:true
+  },
   category:{
     type:String,
     required:true

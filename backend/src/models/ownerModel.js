@@ -5,8 +5,11 @@ const ownerSchema = new mongoose.Schema({
     type: String,
     required: true,
     unique: true,
+  },  
+  userId:{
+    type:mongoose.Schema.Types.ObjectId,
+    required:true
   },
-  
   email: {
     type: String,
     required: true,
