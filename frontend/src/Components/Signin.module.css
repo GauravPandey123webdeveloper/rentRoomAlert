@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+  }
+
+  body{
+    background-color: rgba(0, 0, 0, 0.4)
+  }
+
+  .logoBox{
+    background: #fff;
+    padding: 30px 120px;
+    width: 550px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .Twticon{
+    color: rgb(29, 155, 240);
+    width: 6vw;
+    height: 6vh;
+  }
+
+  .logoBox h2 {
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  .logoBox button{
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+    border-radius: 30px;
+    background: transparent;
+    border: 3px solid  #c76401;
+    font-weight: 500;
+    cursor: pointer;
+    
+  }
+  .Gicon{
+    width: 18px;
+    margin-right: 8px;
+    width: 3vw;
+    height: 3vh;
+    height: 20px;
+  }
+
+  .logoBox hr {
+    border: 0;
+    height: 1px;
+    background: #c2c2c2;
+    margin: 5px;
+  }
+
+  .logoBox span {
+    display: block;
+    width: 40px;
+    margin: auto;
+    background: #fff;
+    font-size: 14px;
+    margin-top: -16px;
+  }
+
+  .input {
+    width: 100%;
+    background: transparent;
+    border: 3px solid #999;
+    outline: 0;
+    padding: 15px 10px;
+    border-radius: 4px;
+  }
+  ::placeholder {
+    font-weight: 500;
+    color: #333;
+  }
+
+  .logoBox p {
+    font-size: 14px;
+    color: #555;
+    margin: 40px 0 50px;
+  }
+  .logoBox p a {
+    text-decoration: none;
+    color: #359cf0;
+    margin-left: 100px;
+    cursor: pointer;
+  }
+
+  .logoBox a {
+    cursor: pointer;
+    color: #c76401;
+}
+
+.logoBox a:hover {
+    color: #359cf0;
+    text-decoration: underline;
+}

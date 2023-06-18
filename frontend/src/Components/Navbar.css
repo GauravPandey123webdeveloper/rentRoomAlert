@@ -1,0 +1,41 @@
+.Navbar-Container{
+    background-color: aqua;
+     display: flex;
+     height: 100px;
+     width: 100%;
+     margin-top: 7px;
+     justify-content: space-between;
+ 
+     box-shadow: 1px 1px 10px 10px;
+ }
+ 
+ .buttons{
+     justify-content: space-between;
+     height: 20px;
+     width: 550px;
+     align-self: center;
+     margin-left:80px;
+ }
+ h3{
+     margin-top: 45px;
+     cursor: pointer;
+ }
+ 
+ .buttons button {
+     height: 30px;
+     width: 90px;
+     margin-right: 40px; 
+     color: black;
+     background-color: orange;
+     border: 2px solid salmon;
+     border-radius: 3px;
+     cursor: pointer;
+   }
+
+   .logo{
+    margin-top: 20px;
+    margin-left: 100px;
+   }
+   
+ 
+ 
